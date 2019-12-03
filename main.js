@@ -29,21 +29,27 @@ const eat = {
 console.log(eat.meals[3]);
   
 const friends = {
-  listOne:['Shannon, Princess', 'Kristy, Bartender']
+  name: 'Kristy',
+  jobTitle: 'bartender'
 };
 const friendsTwo = {
-  listTwo:['Nalani, Student', 'Brandon, Student']
+  name: 'Nalani',
+  jobTitle: 'student', 
+  boss: "Brandon"
 };
 const friendsThree = {
-  listThree:['Riot, Businessman', 'Evie, Dog']
+  name: 'Brandon',
+  jobTitle: 'buddy', 
+  boss:'Kristy'
 };
-let bigList = [friends.listOne, friendsTwo.listTwo, friendsThree.listThree];
+let bigList = [friends, friendsTwo, friendsThree];
 
 for(let i = 0; i < bigList.length; i++){
 
   console.log(bigList[i]);
+  console.log("${title} ${name} reports to ${boss}.")
  
- }
+}
 
 
 

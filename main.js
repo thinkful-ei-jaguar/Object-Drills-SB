@@ -20,9 +20,30 @@ const fun = {
 };
 
 for (const property in fun) {
-    console.log(`${property}: ${fun[property]}`);
+  console.log(`${property}: ${fun[property]}`);
 }
 
-
-
+const eat = {
+  meals:['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+};
+console.log(eat.meals[3]);
   
+const friends = {
+  listOne:['Shannon, Princess', 'Kristy, Bartender']
+};
+const friendsTwo = {
+  listTwo:['Nalani, Student', 'Brandon, Student']
+};
+const friendsThree = {
+  listThree:['Riot, Businessman', 'Evie, Dog']
+};
+let bigList = [friends.listOne, friendsTwo.listTwo, friendsThree.listThree];
+
+for(let i = 0; i < bigList.length; i++){
+
+  console.log(bigList[i]);
+ 
+ }
+
+
+

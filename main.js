@@ -51,5 +51,7 @@ for(let i = 0; i < bigList.length; i++){
  
 }
 
+function createCharecter({name, nickname, race, origin, attack, defense})
+
 
 

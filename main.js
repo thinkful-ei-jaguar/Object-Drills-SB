@@ -94,4 +94,20 @@ function makeStudentsReport(data) {
   }
   }
   
-
+  function validateKeys(object, expectedKeys) {
+    if (Object.keys(object).length !== expectedKeys.length) {
+  return false;
+  }
+  
+  // we iterate over each expected key and verify that
+  // it's found in `object`.
+  for (let i = 0; i < expectedKeys.length; i++) {
+  if (!Object.keys(object).find(key => key === expectedKeys[i])) {
+  return false;
+  }
+  }
+  // if we get to this point in our code, the keys are valid
+  // so we return `true`
+  return true;
+  }
+  
